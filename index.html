@@ -3,57 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Solar Profit</title>
+    <meta name="description" content="Продажа готовых решений для использования ВИЭ-электростанций">
+    <title>Решения для использования ВИЭ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;
+            color: #f4f4f4;
+        }
+        header {
+            background-color: #1c1c1c;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            background-blend-mode: overlay;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            color: #00aaff;
+        }
+        header p {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        header a {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+            background-color: #2a2a2a;
+        }
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #00aaff;
+        }
+        .categories, .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .categories div, .products div {
+            width: 30%;
+            background-color: #333;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .categories div:hover, .products div:hover {
+            transform: scale(1.05);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .categories div, .products div {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Solar Profit</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="about">
-            <h2>О нас</h2>
-            <p>Мы предлагаем лучшие решения по солнечной энергетике.</p>
-        </section>
+<!-- Шапка сайта -->
+<header>
+    <div>
+        <h1>Энергоэффективные решения на ВИЭ</h1>
+        <p>Экологические и экономичные решения для вашего дома и бизнеса.</p>
+        <a href="#products">Смотреть решения</a>
+    </div>
+</header>
 
-        <section id="services">
-            <h2>Услуги</h2>
-            <ul>
-                <li>Установка солнечных панелей</li>
-                <li>Планирование и проектирование систем</li>
-                <li>Обслуживание и поддержка</li>
-            </ul>
-        </section>
+<!-- Продукты -->
+<section id="products" style="background-color: #222;">
+    <h2>Готовые решения</h2>
+    <div class="products">
+        <div>
+            <img src="https://stabhouse.ru/_bd/0/38192933.jpg" alt="Солнечная панель 250 Вт">
+            <h3>Солнечная панель 250 Вт</h3>
+            <p>Идеально для небольших домов и хозяйств.</p>
+            <p style="font-size: 20px; color: #00aaff; font-weight: bold;">12,000 руб.</p>
+            <button>Добавить в корзину</button>
+        </div>
+        <div>
+            <img src="https://avatars.mds.yandex.net/i?id=4f18e1e5fe47e282c2286cc95b4dacd6_l-5009080-images-thumbs&n=13" alt="Гибридная система 2 кВт">
+            <h3>Гибридная система 2 кВт</h3>
+            <p>Оптимальная комбинация солнечных и ветровых источников энергии.</p>
+            <p style="font-size: 20px; color: #00aaff; font-weight: bold;">35,000 руб.</p>
+            <button>Добавить в корзину</button>
+        </div>
+        <div>
+            <img src="https://www.teslarati.com/wp-content/uploads/2019/07/Megapack_tesla.jpg" alt="Система хранения энергии 5 кВт">
+            <h3>Система хранения энергии 5 кВт</h3>
+            <p>Надежная система для долгосрочного использования.</p>
+            <p style="font-size: 20px; color: #00aaff; font-weight: bold;">45,000 руб.</p>
+            <button>Добавить в корзину</button>
+        </div>
+    </div>
+</section>
 
-        <section id="contact">
-            <h2>Контакты</h2>
-            <form id="contact-form">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" required>
+<!-- Преимущества -->
+<section id="advantages">
+    <h2>Почему выбирают нас</h2>
+    <div class="categories">
+        <div>
+            <h3>Гарантия качества</h3>
+            <p>Все наши решения сертифицированы и проверены временем.</p>
+        </div>
+        <div>
+            <h3>Поддержка клиентов</h3>
+            <p>Наши специалисты всегда готовы помочь вам с выбором и установкой.</p>
+        </div>
+        <div>
+            <h3>Экономия и экологичность</h3>
+            <p>Снижение затрат на электроэнергию и минимальный экологический след.</p>
+        </div>
+    </div>
+</section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+<!-- Форма обратной связи -->
 
-                <label for="message">Сообщение:</label>
-                <textarea id="message" name="message" required></textarea>
+</section>
+<section id="contact" style="text-align: center;">
+    <h2>Свяжитесь с нами</h2>
+    <p>Вы можете связаться с нами через Telegram:</p>
+    <a href="https://t.me/oxysensxr" target="_blank" style="text-decoration: none;">
+        <i class="fab fa-telegram-plane" style="font-size: 50px; color: #1DA1F2;"></i>
+        <br>
+        @oxysensxr
+    </a>
+</section>
 
-                <input type="submit" value="Отправить">
-            </form>
-        </section>
-    </main>
+<!-- Подвал сайта -->
+<footer>
+    <p>© 2024 ВИЭ-Энергосистемы. Все права защищены.</p>
+</footer>
 
-    <footer>
-        <p>&copy; 2023 Solar Profit. Все права защищены.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
+
