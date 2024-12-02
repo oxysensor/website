@@ -1,13 +1,24 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Цвет фона */
+    color: #e0e0e0; /* Цвет текста */
+    line-height: 1.6;
+}
+
 header {
-    background-color: #f4c300;
-    color: white;
+    background-color: #1e1e1e; /* Темный фон для заголовка */
     padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
 }
 
 header nav ul {
@@ -17,18 +28,63 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #f4c300; /* Цвет ссылок */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffeb3b; /* Цвет при наведении */
 }
 
 section {
+    background-color: #1e1e1e; /* Темный фон для секций */
+    border-radius: 8px;
     margin: 20px;
+    padding: 20px;
+}
+
+h2 {
+    border-bottom: 1px solid #f4c300; /* Линия под заголовком секции */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333; /* Темный фон для ввода */
+    color: #e0e0e0; /* Цвет текста ввода */
+}
+
+input[type="submit"] {
+    background-color: #f4c300; /* Цвет кнопки */
+    color: #121212; /* Цвет текста кнопки */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffeb3b; /* Цвет кнопки при наведении */
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: #1e1e1e; /* Темный фон для подвала */
+    color: #e0e0e0;
     position: relative;
     bottom: 0;
     width: 100%;
