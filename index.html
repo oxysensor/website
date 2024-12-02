@@ -3,39 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ВИЭ-электростанции</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Подключаем стили -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Solar Profit</title>
 </head>
 <body>
     <header>
-        <h1>Продажа ВИЭ-электростанций</h1>
+        <h1>Solar Profit</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="products.html">Продукты</a></li>
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="intro">
-            <h2>Добро пожаловать!</h2>
-            <p>Мы предлагаем готовые решения для ВИЭ-электростанций.</p>
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Мы предлагаем лучшие решения по солнечной энергетике.</p>
         </section>
-        <section id="features">
-            <h2>Наши решения</h2>
+
+        <section id="services">
+            <h2>Услуги</h2>
             <ul>
-                <li>Солнечные панели</li>
-                <li>Ветроэлектростанции</li>
-                <li>Гидроэлектростанции</li>
+                <li>Установка солнечных панелей</li>
+                <li>Планирование и проектирование систем</li>
+                <li>Обслуживание и поддержка</li>
             </ul>
         </section>
 
-        <footer>
-            <p>© 2023 ВИЭ-Энергия. Все права защищены.</p>
-        </footer>
+        <section id="contact">
+            <h2>Контакты</h2>
+            <form id="contact-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2023 Solar Profit. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
